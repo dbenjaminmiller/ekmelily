@@ -519,8 +519,8 @@ ekmelicOutputSuffix =
   \context {
     \Score
     \override Accidental.stencil = #ekm:acc
-    \override Accidental.horizontal-skylines = #'()
-    \override Accidental.vertical-skylines = #'()
+    %\override Accidental.horizontal-skylines = #'()
+    %\override Accidental.vertical-skylines = #'()
     \override AccidentalCautionary.stencil = #(lambda (grob) (ekm:acc grob #t))
     \override KeySignature.stencil = #ekm:key
     \override KeyCancellation.stencil = #(lambda (grob) (ekm:key grob #t))
